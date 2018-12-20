@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Lecture Evaluation_2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>UserJoinServlet</servlet-name>
+    <servlet-class>user.UserJoinservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserJoinServlet</servlet-name>
+    <url-pattern>/userJoinServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>user.UserLoginservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/userLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EvaluationRegistServlet</servlet-name>
+    <servlet-class>evaluation.EvaluationRegistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EvaluationRegistServlet</servlet-name>
+    <url-pattern>/evaluationRegistServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,16 @@
+<context path="Lecture" docBass="www">
+<Resource
+	name="jdbc/Lecture"
+	auth="Container"
+	type="javax.sql.DataSource"
+	driverClassName="com.mysql.cj.jdbc.Driver"
+	loginTimeout="10"
+	validationQuery="SELECT 1 FROM DUAL"
+	maxWait="5000"
+	username="root"
+	password="imagine"
+	url="jdbc:mysql://localhost:3306/Lecture?serverTimezone=UTC"/>
+<ResourceLink type="javax.sql.data.DataSource"
+	name="jdbc/Lecture"
+	global="jdbc/Lecture"/>	
+</context>
